@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+  {{ resources | safe }}
+  <!-- {{ script | safe }} -->
+</head>
+
+<h3>Sightings</h3>
+<section id="bird-chart">
+  <div class="grid-wrapper">
+    <div class="box1">
+      {{ s_script | safe }}
+    </div>
+    <div class="box2"><h4>Rare Birds</h4></div>
+    <div class="box3"><h4>Common Birds</h4></div>
+    <div class="box4"><h4>Raptors</h4></div>
+    <div class="box5"><h4>Covids</h4></div>
+    <div class="box6"><h4>Waterfowl</h4></div>
+    <div class="box7"><h4>By State</h4></div>
+    <div class="box8"><h4>Waterfowl</h4></div>
+    <div class="box9"><h4>Other graph</h4></div>
+  </div>
+</section>
+<br><br>
+
+{% endblock %}
